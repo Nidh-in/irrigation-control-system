@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Irrigation Control System</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: #2e7d32;
+            border-bottom: 2px solid #2e7d32;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .feature {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f0f7f0;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .feature h3 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #2e7d32;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-right: 10px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #1b5e20;
+        }
+        .btn-secondary {
+            background-color: #546e7a;
+        }
+        .btn-secondary:hover {
+            background-color: #37474f;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌱 Smart Irrigation Control System</h1>
+        <p>Using Machine Learning to Optimize Water Usage</p>
+    </header>
+
+    <div class="container">
+        <p>This project provides a machine learning solution to predict when irrigation pumps should be activated based on environmental data like soil moisture and temperature.</p>
+        
+        <div class="buttons">
+            <a href="https://github.com/YOUR_USERNAME/YOUR_REPO" class="btn">View on GitHub</a>
+            <a href="https://github.com/YOUR_USERNAME/YOUR_REPO#installation--setup" class="btn btn-secondary">Installation Guide</a>
+        </div>
+
+        <h2>Project Overview</h2>
+        <p>The Smart Irrigation Control System helps farmers optimize water usage by making intelligent predictions about when to activate irrigation pumps. By analyzing data patterns in soil moisture levels and temperature, the system can recommend the optimal timing for irrigation.</p>
+
+        <h2>Key Features</h2>
+        
+        <div class="feature">
+            <h3>📊 Data Analysis & Visualization</h3>
+            <p>Visualize and analyze crop data with interactive charts to understand patterns and relationships between environmental factors and irrigation needs.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>🧠 Machine Learning Model Training</h3>
+            <p>Train custom models using algorithms like Random Forest, Decision Tree, or Logistic Regression to predict optimal pump activation times.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>🔄 Real-time Prediction</h3>
+            <p>Get immediate recommendations on whether to open or close irrigation pumps based on current environmental conditions.</p>
+        </div>
+        
+        <div class="feature">
+            <h3>📈 Performance Analysis</h3>
+            <p>Evaluate model performance with key metrics including accuracy, precision, recall, and F1 score to ensure reliable predictions.</p>
+        </div>
+
+        <h2>Dataset Structure</h2>
+        <p>The application works with data in the following format:</p>
+        
+        <table>
+            <tr>
+                <th>crop</th>
+                <th>moisture</th>
+                <th>temp</th>
+                <th>pump</th>
+            </tr>
+            <tr>
+                <td>cotton</td>
+                <td>750</td>
+                <td>25</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>cotton</td>
+                <td>650</td>
+                <td>30</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>cotton</td>
+                <td>350</td>
+                <td>22</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>cotton</td>
+                <td>200</td>
+                <td>28</td>
+                <td>0</td>
+            </tr>
+        </table>
+        
+        <p>Where:</p>
+        <ul>
+            <li><strong>crop</strong>: Type of crop (e.g., cotton)</li>
+            <li><strong>moisture</strong>: Soil moisture level</li>
+            <li><strong>temp</strong>: Temperature in °C</li>
+            <li><strong>pump</strong>: Target variable (1 = pump ON, 0 = pump OFF)</li>
+        </ul>
+
+        <h2>Technologies Used</h2>
+        <ul>
+            <li><strong>Python</strong>: Core programming language</li>
+            <li><strong>Streamlit</strong>: Interactive web application framework</li>
+            <li><strong>Pandas & NumPy</strong>: Data manipulation and analysis</li>
+            <li><strong>Scikit-learn</strong>: Machine learning algorithms and tools</li>
+            <li><strong>Matplotlib & Seaborn</strong>: Data visualization</li>
+        </ul>
+
+        <h2>How to Use</h2>
+        <p>To use this application:</p>
+        <ol>
+            <li>Clone the repository from GitHub</li>
+            <li>Install the required dependencies</li>
+            <li>Run the Streamlit application</li>
+            <li>Upload your dataset or use the provided sample data</li>
+            <li>Train a model using your preferred algorithm</li>
+            <li>Make real-time predictions based on current environmental conditions</li>
+        </ol>
+        <p>For detailed installation and usage instructions, please refer to the <a href="https://github.com/YOUR_USERNAME/YOUR_REPO#installation--setup">README on GitHub</a>.</p>
+
+        <h2>Important Note</h2>
+        <p>This is a Streamlit Python application that cannot run directly on GitHub Pages. To use this application, you'll need to download the source code and run it locally or deploy it to a Python-compatible hosting service like Streamlit Cloud, Heroku, or similar platforms.</p>
+    </div>
+
+    <footer>
+        <p>Smart Irrigation Control System &copy; 2025 | <a href="https://github.com/YOUR_USERNAME">GitHub Profile</a></p>
+    </footer>
+</body>
+</html>
